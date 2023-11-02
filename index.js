@@ -32,18 +32,12 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
 // === EDIT THE CODE BELOW ===
 // Complete the functions below to make the program work!
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the length of the array
- */
+// Cleaned up a lot of the code that had either * or ** in front.
+
 function getLength(numbers) {
   return numbers.length;
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the sum of the numbers
- */
 function getSum(numbers) {
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -52,10 +46,6 @@ function getSum(numbers) {
   return sum;
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the mean of the numbers
- */
 function getMean(numbers) {
   if (numbers.length === 0) {
     return 0;
@@ -63,10 +53,6 @@ function getMean(numbers) {
   return getSum(numbers) / numbers.length;
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the smallest of the numbers
- */
 function getMin(numbers) {
   if (numbers.length === 0) {
     return 0;
@@ -80,10 +66,6 @@ function getMin(numbers) {
   return min;
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the largest of the numbers
- */
 function getMax(numbers) {
   if (numbers.length === 0) {
     return 0;
@@ -97,26 +79,14 @@ function getMax(numbers) {
   return max;
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the range of the numbers (max - min)
- */
 function getRange(numbers) {
   return getMax(numbers) - getMin(numbers);
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the even numbers in the array
- */
 function getEvens(numbers) {
   return numbers.filter((number) => number % 2 == 0);
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the odd numbers in the array
- */
 function getOdds(numbers) {
   return numbers.filter((number) => numbers % 2 !== 0);
 }
